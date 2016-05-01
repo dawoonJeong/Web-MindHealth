@@ -1,0 +1,533 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/calculation.js"></script>
+    	<link href="../css/commonEdit.css" rel="stylesheet">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    	<style>
+    	.container{
+    		width:900px;
+    		padding-top:15px;
+    	}
+    	</style>
+	</head>
+	
+	<body>
+		<div class="container" >			
+			<div class="panel panel-primary">
+				<!-- 설명 -->
+				<dl class="dl-horizontal">
+					<h2> Job stress </h2>
+					직무스트레스 上<br/>
+					직무스트레스 요인 측정<br/>
+					어떤 상황에 대해 스트레스를 받으면, 우리 신체는 적응하거나 저항하게 됩니다. 그러나 적응하려 노력하는데도 그 자극이 계속되거나 적응에 실패하면, 내부의 에너지가 고갈되고 심리적으로 자포자기 하거나 우울해지는 단계를 겪게 됩니다. 이 단계에서는 전문가의 도움을 받아야 합니다. 아래의 문항들을 잘 읽고 본인의 생각을 선택해주세요.<br/>
+					A: 전혀 그렇지 않다 B: 그렇지 않다 C: 그렇다 D: 매우그렇다<br/>
+
+				</dl>
+			</div> <!-- end description -->
+
+			<div >
+				<!-- 테이블 -->
+				<table class="table" >
+					<thead>
+						<tr >
+							<th nowrap color="white"> 번호 </th>
+							<th color="white"> 평가내용 </th>
+							<th color="white"> A </th>
+							<th color="white"> B </th>
+							<th color="white"> C </th>
+							<th color="white"> D </th>
+						</tr>
+					</thead>
+					<tbody>
+						<form name="survey_count">
+														<tr>
+								<th> 01 </th>
+								<td> 근무 장소가 깨끗하고 쾌적하다. </td>
+								<td><input type="radio" name="d1" value="4" /></td>
+								<td><input type="radio" name="d1" value="3" /></td>
+								<td><input type="radio" name="d1" value="2" /></td>
+								<td><input type="radio" name="d1" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 02 </th>
+								<td> 내 일은 위험하며 사고를 당할 가능성이 있다. </td>
+								<td><input type="radio" name="d2" value="1" /></td>
+								<td><input type="radio" name="d2" value="2" /></td>
+								<td><input type="radio" name="d2" value="3" /></td>
+								<td><input type="radio" name="d2" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 03 </th>
+								<td> 내 업무는 불편한 자세로 오랫동안 일을 해야 한다. </td>
+								<td><input type="radio" name="d3" value="1" /></td>
+								<td><input type="radio" name="d3" value="2" /></td>
+								<td><input type="radio" name="d3" value="3" /></td>
+								<td><input type="radio" name="d3" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 04 </th>
+								<td> 나는 일이 많아 항상 시간에 쫓기며 일한다. </td>
+								<td><input type="radio" name="d4" value="1" /></td>
+								<td><input type="radio" name="d4" value="2" /></td>
+								<td><input type="radio" name="d4" value="3" /></td>
+								<td><input type="radio" name="d4" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 05 </th>
+								<td> 현재 하던 일을 끝내기 전에 다른 일을 하도록 지시받는다. </td>
+								<td><input type="radio" name="d5" value="1" /></td>
+								<td><input type="radio" name="d5" value="2" /></td>
+								<td><input type="radio" name="d5" value="3" /></td>
+								<td><input type="radio" name="d5" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 06 </th>
+								<td> 업무량이 현저하게 증가하였다. </td>
+								<td><input type="radio" name="d6" value="1" /></td>
+								<td><input type="radio" name="d6" value="2" /></td>
+								<td><input type="radio" name="d6" value="3" /></td>
+								<td><input type="radio" name="d6" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 07 </th>
+								<td> 나는 동료나 부하직원을 돌보고 책임져야 할 부담을 안고 있다. </td>
+								<td><input type="radio" name="d7" value="1" /></td>
+								<td><input type="radio" name="d7" value="2" /></td>
+								<td><input type="radio" name="d7" value="3" /></td>
+								<td><input type="radio" name="d7" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 08 </th>
+								<td> 내 업무는 장시간 동안 집중력이 요구된다. </td>
+								<td><input type="radio" name="d8" value="1" /></td>
+								<td><input type="radio" name="d8" value="2" /></td>
+								<td><input type="radio" name="d8" value="3" /></td>
+								<td><input type="radio" name="d8" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 09 </th>
+								<td> 업무 수행 중에 충분한 휴식(짬)이 주어진다 </td>
+								<td><input type="radio" name="d9" value="4" /></td>
+								<td><input type="radio" name="d9" value="3" /></td>
+								<td><input type="radio" name="d9" value="2" /></td>
+								<td><input type="radio" name="d9" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 10 </th>
+								<td> 일이 많아서 직장과 가정에 다 잘하기가 힘들다. </td>
+								<td><input type="radio" name="d10" value="1" /></td>
+								<td><input type="radio" name="d10" value="2" /></td>
+								<td><input type="radio" name="d10" value="3" /></td>
+								<td><input type="radio" name="d10" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 11 </th>
+								<td> 여러 가지 일을 한꺼번에 해야 한다. </td>
+								<td><input type="radio" name="d11" value="1" /></td>
+								<td><input type="radio" name="d11" value="2" /></td>
+								<td><input type="radio" name="d11" value="3" /></td>
+								<td><input type="radio" name="d11" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 12 </th>
+								<td> 내 업무는 창의력을 필요로 한다. </td>
+								<td><input type="radio" name="d12" value="4" /></td>
+								<td><input type="radio" name="d12" value="3" /></td>
+								<td><input type="radio" name="d12" value="2" /></td>
+								<td><input type="radio" name="d12" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 13 </th>
+								<td> 업무관련 사항(업무의 일정, 업무량, 회의시간 등)이 예고 없이 갑작스럽게 정해지거나 바뀐다. </td>
+								<td><input type="radio" name="d13" value="1" /></td>
+								<td><input type="radio" name="d13" value="2" /></td>
+								<td><input type="radio" name="d13" value="3" /></td>
+								<td><input type="radio" name="d13" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 14 </th>
+								<td> 내 업무를 수행하기 위해서는 높은 수준의 기술이나 지식이 필요하다. </td>
+								<td><input type="radio" name="d14" value="4" /></td>
+								<td><input type="radio" name="d14" value="3" /></td>
+								<td><input type="radio" name="d14" value="2" /></td>
+								<td><input type="radio" name="d14" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 15 </th>
+								<td> 작업시간, 업무수행과정에서 어떤 사안에 대해 결정할 권한이 주어지며 영향력을 행사할 수 있다. </td>
+								<td><input type="radio" name="d15" value="4" /></td>
+								<td><input type="radio" name="d15" value="3" /></td>
+								<td><input type="radio" name="d15" value="2" /></td>
+								<td><input type="radio" name="d15" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 16 </th>
+								<td> 나의 업무량과 작업스케줄을 스스로 조절할 수 있다. </td>
+								<td><input type="radio" name="d16" value="4" /></td>
+								<td><input type="radio" name="d16" value="3" /></td>
+								<td><input type="radio" name="d16" value="2" /></td>
+								<td><input type="radio" name="d16" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 17 </th>
+								<td> 나의 상사는 업무를 완료하는데 도움을 준다.</td>
+								<td><input type="radio" name="d17" value="4" /></td>
+								<td><input type="radio" name="d17" value="3" /></td>
+								<td><input type="radio" name="d17" value="2" /></td>
+								<td><input type="radio" name="d17" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 18 </th>
+								<td> 나의 동료는 업무를 완료하는데 도움을 준다. </td>
+								<td><input type="radio" name="d18" value="4" /></td>
+								<td><input type="radio" name="d18" value="3" /></td>
+								<td><input type="radio" name="d18" value="2" /></td>
+								<td><input type="radio" name="d18" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 19 </th>
+								<td> 직장에서 내가 힘들 때 내가 힘들다는 것을 알아주고 이해해 주는 사람이 있다. </td>
+								<td><input type="radio" name="d19" value="4" /></td>
+								<td><input type="radio" name="d19" value="3" /></td>
+								<td><input type="radio" name="d19" value="2" /></td>
+								<td><input type="radio" name="d19" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 20 </th>
+								<td> 직장생활의 고충을 함께 나눌 동료가 있다. </td>
+								<td><input type="radio" name="d20" value="4" /></td>
+								<td><input type="radio" name="d20" value="3" /></td>
+								<td><input type="radio" name="d20" value="2" /></td>
+								<td><input type="radio" name="d20" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 21 </th>
+								<td> 지금의 직장을 옮겨도 나에게 적합한 새로운 일을 쉽게 찾을 수 있다. </td>
+								<td><input type="radio" name="d21" value="4" /></td>
+								<td><input type="radio" name="d21" value="3" /></td>
+								<td><input type="radio" name="d21" value="2" /></td>
+								<td><input type="radio" name="d21" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 22 </th>
+								<td> 현재의 직장을 그만두어도 현재 수준만큼의 직업(직장)을 쉽게 구할 수 있다. </td>
+								<td><input type="radio" name="d22" value="4" /></td>
+								<td><input type="radio" name="d22" value="3" /></td>
+								<td><input type="radio" name="d22" value="2" /></td>
+								<td><input type="radio" name="d22" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 23 </th>
+								<td> 직장사정이 불안하여 미래가 불확실하다. </td>
+								<td><input type="radio" name="d23" value="1" /></td>
+								<td><input type="radio" name="d23" value="2" /></td>
+								<td><input type="radio" name="d23" value="3" /></td>
+								<td><input type="radio" name="d23" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 24 </th>
+								<td> 나의 직업은 실직하거나 해고당할 염려가 없다. </td>
+								<td><input type="radio" name="d24" value="4" /></td>
+								<td><input type="radio" name="d24" value="3" /></td>
+								<td><input type="radio" name="d24" value="2" /></td>
+								<td><input type="radio" name="d24" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 25 </th>
+								<td> 앞으로 2년 동안 현재의 내 직업을 잃을 가능성이 있다. </td>
+								<td><input type="radio" name="d25" value="1" /></td>
+								<td><input type="radio" name="d25" value="2" /></td>
+								<td><input type="radio" name="d25" value="3" /></td>
+								<td><input type="radio" name="d25" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 26 </th>
+								<td> 나의 근무조건이나 상황에 바람직하지 못한 변화
+(예, 구조조정)가 있었거나 있을 것으로 예상된다. </td>
+								<td><input type="radio" name="d26" value="1" /></td>
+								<td><input type="radio" name="d26" value="2" /></td>
+								<td><input type="radio" name="d26" value="3" /></td>
+								<td><input type="radio" name="d26" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 27 </th>
+								<td> 우리 회사는 근무평가나 승진, 부서배치 등 인사제도가 공정하고 합리적이다. </td>
+								<td><input type="radio" name="d27" value="4" /></td>
+								<td><input type="radio" name="d27" value="3" /></td>
+								<td><input type="radio" name="d27" value="2" /></td>
+								<td><input type="radio" name="d27" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 28 </th>
+								<td> 업무수행에 필요한 인원, 공간, 시설, 장비, 훈련등의 지원이 잘 이루어지고 있다. </td>
+								<td><input type="radio" name="d28" value="4" /></td>
+								<td><input type="radio" name="d28" value="3" /></td>
+								<td><input type="radio" name="d28" value="2" /></td>
+								<td><input type="radio" name="d28" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 29 </th>
+								<td> 우리 부서와 타 부서간에는 마찰이 없고 업무협조가 잘 이루어진다. </td>
+								<td><input type="radio" name="d29" value="4" /></td>
+								<td><input type="radio" name="d29" value="3" /></td>
+								<td><input type="radio" name="d29" value="2" /></td>
+								<td><input type="radio" name="d29" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 30 </th>
+								<td> 근로자, 간부, 경영주 모두가 직장을 위해 한마음으로 일을 한다. </td>
+								<td><input type="radio" name="d30" value="4" /></td>
+								<td><input type="radio" name="d30" value="3" /></td>
+								<td><input type="radio" name="d30" value="2" /></td>
+								<td><input type="radio" name="d30" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 31 </th>
+								<td> 일에 대한 나의 생각을 반영할 수 있는 기회와 통로가 있다. </td>
+								<td><input type="radio" name="d31" value="4" /></td>
+								<td><input type="radio" name="d31" value="3" /></td>
+								<td><input type="radio" name="d31" value="2" /></td>
+								<td><input type="radio" name="d31" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 32 </th>
+								<td> 나의 경력개발과 승진은 무난히 무난히 잘 될 것으로 예상한다. </td>
+								<td><input type="radio" name="d32" value="4" /></td>
+								<td><input type="radio" name="d32" value="3" /></td>
+								<td><input type="radio" name="d32" value="2" /></td>
+								<td><input type="radio" name="d32" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 33 </th>
+								<td> 나의 현재 직위는 나의 교육 및 경력에 비추어볼 때 적절하다. </td>
+								<td><input type="radio" name="d33" value="4" /></td>
+								<td><input type="radio" name="d33" value="3" /></td>
+								<td><input type="radio" name="d33" value="2" /></td>
+								<td><input type="radio" name="d33" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 34 </th>
+								<td> 나의 직업은 내가 평소 기대했던 것에 미치지 못한다. </td>
+								<td><input type="radio" name="d34" value="1" /></td>
+								<td><input type="radio" name="d34" value="2" /></td>
+								<td><input type="radio" name="d34" value="3" /></td>
+								<td><input type="radio" name="d34" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 35 </th>
+								<td> 나의 모든 노력과 업적을 고려할 때 내 봉급/수입은 적절하다. </td>
+								<td><input type="radio" name="d35" value="4" /></td>
+								<td><input type="radio" name="d35" value="3" /></td>
+								<td><input type="radio" name="d35" value="2" /></td>
+								<td><input type="radio" name="d35" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 36 </th>
+								<td> 나의 모든 노력과 업적을 고려할 때, 나는 직장에서 제대로 존중과 신임을 받고 있다. </td>
+								<td><input type="radio" name="d36" value="4" /></td>
+								<td><input type="radio" name="d36" value="3" /></td>
+								<td><input type="radio" name="d36" value="2" /></td>
+								<td><input type="radio" name="d36" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 37 </th>
+								<td> 나는 지금 하는 일에 흥미를 느낀다. </td>
+								<td><input type="radio" name="d37" value="4" /></td>
+								<td><input type="radio" name="d37" value="3" /></td>
+								<td><input type="radio" name="d37" value="2" /></td>
+								<td><input type="radio" name="d37" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 38 </th>
+								<td> 내 사정이 앞으로 더 좋아질 것을 생각하면 힘든 줄 모르고 일하게 된다. </td>
+								<td><input type="radio" name="d38" value="4" /></td>
+								<td><input type="radio" name="d38" value="3" /></td>
+								<td><input type="radio" name="d38" value="2" /></td>
+								<td><input type="radio" name="d38" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 39 </th>
+								<td> 나의 능력을 개발하고 발휘할 수 있는 기회가 주어진다. </td>
+								<td><input type="radio" name="d39" value="4" /></td>
+								<td><input type="radio" name="d39" value="3" /></td>
+								<td><input type="radio" name="d39" value="2" /></td>
+								<td><input type="radio" name="d39" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 40 </th>
+								<td> 회식자리가 불편하다. </td>
+								<td><input type="radio" name="d40" value="1" /></td>
+								<td><input type="radio" name="d40" value="2" /></td>
+								<td><input type="radio" name="d40" value="3" /></td>
+								<td><input type="radio" name="d40" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 41 </th>
+								<td> 기준이나 일관성이 없는 상태로 업무 지시를 받는다. </td>
+								<td><input type="radio" name="d41" value="1" /></td>
+								<td><input type="radio" name="d41" value="2" /></td>
+								<td><input type="radio" name="d41" value="3" /></td>
+								<td><input type="radio" name="d41" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 42 </th>
+								<td> 직장의 분위기가 권위적이고 수직적이다. </td>
+								<td><input type="radio" name="d42" value="1" /></td>
+								<td><input type="radio" name="d42" value="2" /></td>
+								<td><input type="radio" name="d42" value="3" /></td>
+								<td><input type="radio" name="d42" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 43 </th>
+								<td> 남성, 여성이라는 성적인 차이 때문에 불이익을 받는다. </td>
+								<td><input type="radio" name="d43" value="1" /></td>
+								<td><input type="radio" name="d43" value="2" /></td>
+								<td><input type="radio" name="d43" value="3" /></td>
+								<td><input type="radio" name="d43" value="4" /></td>
+							</tr>
+													</form>
+					</tbody>
+				</table>
+			</div> <!-- end table-->
+			<div align="right">
+				<!-- 버튼 및 총점 // js 태그로 달아둠 -->
+				<a href="javascript:;" onClick="survey_count.reset();" class="btn btn-default btn-sm active" role="button">다시하기</a>
+				<a href="javascript:calcScoreJob01();" class="btn btn-primary btn-sm active" role="button">총점확인</a>
+			</div><!-- end btn and score -->
+			<p></p>
+			<div class="panel panel-primary"> <!-- 점수 범위 설명 부분 -->
+				<div class="panel-heading"> 점수결과 </div>
+				<div class="panel-body">	
+
+					<ul class="nav nav-tabs" >
+						<li class="active"><a data-toggle="tab" href="#man">남자</a></li>
+						<li><a data-toggle="tab" href="#woman">여자</a></li>
+					</ul>
+
+					<div class="tab-content">
+						<div id="man" class="tab-pane fade in active">
+						<table class="table">
+							<thead style="background-color:#ffffff; color:black;">
+							<tr>
+								<th color="white"> 영 역 </th>
+								<th color="white"> 결과값 </th>
+								<th color="white"> 한국노동자 중간값 </th>
+							</tr>
+							<tbody>
+								<tr>
+									<td>물리적 환경</td>
+									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>직무요구</td>
+									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
+									<td>50.1</td>
+								</tr>
+								<tr>
+									<td>직무자율</td>
+									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
+									<td>53.4</td>
+								</tr>
+								<tr>
+									<td>관계갈등</td>
+									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
+									<td>33.4</td>
+								</tr>
+								<tr>
+									<td>직무불안정</td>
+									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
+									<td>50.1</td>
+								</tr>
+								<tr>
+									<td>조직체계</td>
+									<td><input type="text" border="none" name="result5" size="5" readonly> 점</td>
+									<td>52.4</td>
+								</tr>
+								<tr>
+									<td>보상부적절</td>
+									<td><input type="text" border="none" name="result6" size="5" readonly> 점</td>
+									<td>66.7</td>
+								</tr>
+								<tr>
+									<td>직장문화</td>
+									<td><input type="text" border="none" name="result7" size="5" readonly> 점</td>
+									<td>41.7</td>
+								</tr>
+							</tbody>
+						</thead>
+						</table>
+						</div>
+						<div id="woman" class="tab-pane fade">
+						<table class="table">
+						<thead style="background-color:#ffffff; color:black;">
+							<tr>
+								<th color="white"> 영 역 </th>
+								<th color="white"> 결과값 </th>
+								<th color="white"> 한국노동자 중간값 </th>
+							</tr>
+							<tbody>
+								<tr>
+									<td>물리적 환경</td>
+									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>직무요구</td>
+									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
+									<td>54.2</td>
+								</tr>
+								<tr>
+									<td>직무자율</td>
+									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>관계갈등</td>
+									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>직무불안정</td>
+									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>조직체계</td>
+									<td><input type="text" border="none" name="result5" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>보상부적절</td>
+									<td><input type="text" border="none" name="result6" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+								<tr>
+									<td>직장문화</td>
+									<td><input type="text" border="none" name="result7" size="5" readonly> 점</td>
+									<td>44.5</td>
+								</tr>
+							</tbody>
+						</thead>
+						</table>
+					</div><!-- end woman -->
+					</div><!-- end tab-content -->
+				</div>	<!-- end pannel body -->	
+			</div><!-- end pannel -->
+		</div><!-- end container -->		
+		<script>
+$(document).ready(function(){
+  $(".nav-tabs a").click(function(){
+    $(this).tab('show');
+  });
+});
+</script>
+	</body>
+</html>

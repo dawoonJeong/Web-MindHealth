@@ -1,0 +1,344 @@
+
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/calculation.js"></script>
+    	<link href="../css/commonEdit.css" rel="stylesheet">
+    	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    	<style>
+    	.container{
+    		width:900px;
+    		padding-top:15px;
+    	}
+    	</style>
+	</head>
+	
+	<body>
+		<div class="container" >			
+			<div class="panel panel-primary">
+				<!-- 설명 -->
+				<dl class="dl-horizontal">
+					<h2> Job stress </h2>
+					직무스트레스 下<br/>
+					감정노동평가<br/>
+					어떤 상황에 대해 스트레스를 받으면, 우리 신체는 적응하거나 저항하게 됩니다. 그러나 적응하려 노력하는데도 그 자극이 계속되거나 적응에 실패하면, 내부의 에너지가 고갈되고 심리적으로 자포자기 하거나 우울해지는 단계를 겪게 됩니다. 이 단계에서는 전문가의 도움을 받아야 합니다. 아래의 문항들을 잘 읽고 본인의 생각을 선택해주세요.<br/>
+					A: 전혀 그렇지 않다 B: 약간 그렇지 않다 C: 약간 그렇다 D: 매우 그렇다<br/>
+
+				</dl>
+			</div> <!-- end description -->
+
+			<div >
+				<!-- 테이블 -->
+				<table class="table" >
+					<thead>
+						<tr >
+							<th nowrap color="white"> 번호 </th>
+							<th color="white"> 평가내용 </th>
+							<th color="white"> A </th>
+							<th color="white"> B </th>
+							<th color="white"> C </th>
+							<th color="white"> D </th>
+						</tr>
+					</thead>
+					<tbody>
+						<form name="survey_count">
+														<tr>
+								<th> 01 </th>
+								<td> 고객에게 부정적인 감정을 표현하지 않으려고 의식적으로 노력한다. </td>
+								<td><input type="radio" name="d1" value="1" /></td>
+								<td><input type="radio" name="d1" value="2" /></td>
+								<td><input type="radio" name="d1" value="3" /></td>
+								<td><input type="radio" name="d1" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 02 </th>
+								<td> 고객을 대할 때 회사의 요구대로 감정 표현을 할 수밖에 없다. </td>
+								<td><input type="radio" name="d2" value="1" /></td>
+								<td><input type="radio" name="d2" value="2" /></td>
+								<td><input type="radio" name="d2" value="3" /></td>
+								<td><input type="radio" name="d2" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 03 </th>
+								<td> 업무상 고객을 대하는 과정에서 나의 솔직한 감정을 숨긴다. </td>
+								<td><input type="radio" name="d3" value="1" /></td>
+								<td><input type="radio" name="d3" value="2" /></td>
+								<td><input type="radio" name="d3" value="3" /></td>
+								<td><input type="radio" name="d3" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 04 </th>
+								<td> 일상적인 업무수행을 위해서는 감정을 조절하려는 노력이 필요하다. </td>
+								<td><input type="radio" name="d4" value="1" /></td>
+								<td><input type="radio" name="d4" value="2" /></td>
+								<td><input type="radio" name="d4" value="3" /></td>
+								<td><input type="radio" name="d4" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 05 </th>
+								<td> 고객을 대할 때 느끼는 나의 감정과 내가 실제 표현하는 감정은 다르다. </td>
+								<td><input type="radio" name="d5" value="1" /></td>
+								<td><input type="radio" name="d5" value="2" /></td>
+								<td><input type="radio" name="d5" value="3" /></td>
+								<td><input type="radio" name="d5" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 06 </th>
+								<td> 공격적이거나 까다로운 고객을 상대해야 한다. </td>
+								<td><input type="radio" name="d6" value="1" /></td>
+								<td><input type="radio" name="d6" value="2" /></td>
+								<td><input type="radio" name="d6" value="3" /></td>
+								<td><input type="radio" name="d6" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 07 </th>
+								<td> 나의 능력이나 권한 밖의 일을 요구하는 고객을 상대해야 한다. </td>
+								<td><input type="radio" name="d7" value="1" /></td>
+								<td><input type="radio" name="d7" value="2" /></td>
+								<td><input type="radio" name="d7" value="3" /></td>
+								<td><input type="radio" name="d7" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 08 </th>
+								<td> 고객의 부당하거나 막무가내의 요구로 업무 수행의 어려움이 있다. </td>
+								<td><input type="radio" name="d8" value="1" /></td>
+								<td><input type="radio" name="d8" value="2" /></td>
+								<td><input type="radio" name="d8" value="3" /></td>
+								<td><input type="radio" name="d8" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 09 </th>
+								<td> 고객을 응대할 때 자존심이 상한다. </td>
+								<td><input type="radio" name="d9" value="1" /></td>
+								<td><input type="radio" name="d9" value="2" /></td>
+								<td><input type="radio" name="d9" value="3" /></td>
+								<td><input type="radio" name="d9" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 10 </th>
+								<td> 고객에게 감정을 숨기고 표현하지 못할 때 나는 감정이 상한다. </td>
+								<td><input type="radio" name="d10" value="1" /></td>
+								<td><input type="radio" name="d10" value="2" /></td>
+								<td><input type="radio" name="d10" value="3" /></td>
+								<td><input type="radio" name="d10" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 11 </th>
+								<td> 고객을 응대할 때 나의 감정이 상품처럼 느껴진다. </td>
+								<td><input type="radio" name="d11" value="1" /></td>
+								<td><input type="radio" name="d11" value="2" /></td>
+								<td><input type="radio" name="d11" value="3" /></td>
+								<td><input type="radio" name="d11" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 12 </th>
+								<td> 퇴근 후에도 고객을 응대할 때 힘들었던 감정이 남아 있다. </td>
+								<td><input type="radio" name="d12" value="1" /></td>
+								<td><input type="radio" name="d12" value="2" /></td>
+								<td><input type="radio" name="d12" value="3" /></td>
+								<td><input type="radio" name="d12" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 13 </th>
+								<td> 고객을 대하는 과정에서 마음의 상처를 받는다. </td>
+								<td><input type="radio" name="d13" value="1" /></td>
+								<td><input type="radio" name="d13" value="2" /></td>
+								<td><input type="radio" name="d13" value="3" /></td>
+								<td><input type="radio" name="d13" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 14 </th>
+								<td> 몸이 피곤해도 고객들에게 최선을 다해야 하므로 감정적으로 힘들다. </td>
+								<td><input type="radio" name="d14" value="1" /></td>
+								<td><input type="radio" name="d14" value="2" /></td>
+								<td><input type="radio" name="d14" value="3" /></td>
+								<td><input type="radio" name="d14" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 15 </th>
+								<td> 직장이 요구하는 대로 고객에게 잘 응대하는지 감시를 당한다(CCTV 등). </td>
+								<td><input type="radio" name="d15" value="1" /></td>
+								<td><input type="radio" name="d15" value="2" /></td>
+								<td><input type="radio" name="d15" value="3" /></td>
+								<td><input type="radio" name="d15" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 16 </th>
+								<td> 고객의 평가가 업무성과평가나 인사고과에 영향을 준다. </td>
+								<td><input type="radio" name="d16" value="1" /></td>
+								<td><input type="radio" name="d16" value="2" /></td>
+								<td><input type="radio" name="d16" value="3" /></td>
+								<td><input type="radio" name="d16" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 17 </th>
+								<td> 고객 응대에 문제가 발생했을 때, 나의 잘못이 아닌데도 직장으로부터 부당한
+처우를 받는다.</td>
+								<td><input type="radio" name="d17" value="1" /></td>
+								<td><input type="radio" name="d17" value="2" /></td>
+								<td><input type="radio" name="d17" value="3" /></td>
+								<td><input type="radio" name="d17" value="4" /></td>
+							</tr>
+														<tr>
+								<th> 18 </th>
+								<td> 고객 응대 과정에서 문제가 발생 시 직장에서 적절한 조치가 이루어진다. </td>
+								<td><input type="radio" name="d18" value="4" /></td>
+								<td><input type="radio" name="d18" value="3" /></td>
+								<td><input type="radio" name="d18" value="2" /></td>
+								<td><input type="radio" name="d18" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 19 </th>
+								<td> 고객 응대 과정에서 발생한 문제를 해결하고 도와주는 직장 내의 공식적인
+제도와 절차가 있다. </td>
+								<td><input type="radio" name="d19" value="4" /></td>
+								<td><input type="radio" name="d19" value="3" /></td>
+								<td><input type="radio" name="d19" value="2" /></td>
+								<td><input type="radio" name="d19" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 20 </th>
+								<td> 직장은 고객 응대 과정에서 입은 마음의 상처를 위로받게 해준다. </td>
+								<td><input type="radio" name="d20" value="4" /></td>
+								<td><input type="radio" name="d20" value="3" /></td>
+								<td><input type="radio" name="d20" value="2" /></td>
+								<td><input type="radio" name="d20" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 21 </th>
+								<td> 상사는 고객 응대 과정에서 발생한 문제를 해결하기 위해 도와준다. </td>
+								<td><input type="radio" name="d21" value="4" /></td>
+								<td><input type="radio" name="d21" value="3" /></td>
+								<td><input type="radio" name="d21" value="2" /></td>
+								<td><input type="radio" name="d21" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 22 </th>
+								<td> 동료는 고객 응대 과정에서 발생한 문제를 해결하기 위해 도와준다. </td>
+								<td><input type="radio" name="d22" value="4" /></td>
+								<td><input type="radio" name="d22" value="3" /></td>
+								<td><input type="radio" name="d22" value="2" /></td>
+								<td><input type="radio" name="d22" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 23 </th>
+								<td> 직장 내에 고객 응대에 관한 행동지침이나 매뉴얼(설명서, 안내서)이 마련되어 있다. </td>
+								<td><input type="radio" name="d23" value="4" /></td>
+								<td><input type="radio" name="d23" value="3" /></td>
+								<td><input type="radio" name="d23" value="2" /></td>
+								<td><input type="radio" name="d23" value="1" /></td>
+							</tr>
+														<tr>
+								<th> 24 </th>
+								<td> 고객의 요구를 해결해 줄 수 있는 권한이나 자율성이 나에게 주어져 있다. </td>
+								<td><input type="radio" name="d24" value="4" /></td>
+								<td><input type="radio" name="d24" value="3" /></td>
+								<td><input type="radio" name="d24" value="2" /></td>
+								<td><input type="radio" name="d24" value="1" /></td>
+							</tr>
+																	</form>
+					</tbody>
+				</table>
+			</div> <!-- end table-->
+			<div align="right">
+				<!-- 버튼 및 총점 // js 태그로 달아둠 -->
+				<a href="javascript:;" onClick="survey_count.reset();" class="btn btn-default btn-sm active" role="button">다시하기</a>
+				<a href="javascript:calcScoreJob02();" class="btn btn-primary btn-sm active" role="button">총점확인</a>
+			</div><!-- end btn and score -->
+			<p></p>
+			<div class="panel panel-primary"> <!-- 점수 범위 설명 부분 -->
+				<div class="panel-heading"> 점수결과 </div>
+				<div class="panel-body">	
+					<ul class="nav nav-tabs">
+						<li class="active"><a data-toggle="tab" href="#man">남자</a></li>
+						<li><a data-toggle="tab" href="#woman">여자</a></li>
+					</ul>		
+
+					<div class="tab-content">
+					<div id="man" class="tab-pane fade in active">			
+					<table class="table">
+						<thead style="background-color:#ffffff; color:black;">
+							<tr>
+								<th color="white"> 영 역 </th>
+								<th color="white"> 결과값 </th>
+								<th color="white"> 위험범위(남) </th>
+							</tr>
+							<tbody>
+								<tr name="redish0">
+									<td>감정표출의 노력 및 다양성</td>
+									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
+									<td>83.33~100</td>
+								</tr>
+								<tr name="redish1">
+									<td>고객응대 과부하 및 갈등</td>
+									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
+									<td>83.33~100</td>
+								</tr>
+								<tr name="redish2">
+									<td>감정부조화 및 손상</td>
+									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
+									<td>69.44~100</td>
+								</tr>
+								<tr name="redish3">
+									<td>조직 감시 및 모니터링</td>
+									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
+									<td>61.11~100</td>
+								</tr>
+								<tr name="redish4">
+									<td>조직 지지 및 보호체계</td>
+									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
+									<td>50.00~100</td>
+								</tr>
+							</tbody>
+						</thead>
+					</table>
+					</div>
+					<div id="woman" class="tab-pane fade">
+					<table class="table">
+						<thead style="background-color:#ffffff; color:black;">
+							<tr>
+								<th color="white"> 영 역 </th>
+								<th color="white"> 결과값 </th>
+								<th color="white"> 위험범위(여) </th>
+							</tr>
+							<tbody>
+								<tr name="redish0">
+									<td>감정표출의 노력 및 다양성</td>
+									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
+									<td>76.67~100</td>
+								</tr>
+								<tr name="redish1">
+									<td>고객응대 과부하 및 갈등</td>
+									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
+									<td>72.22~100</td>
+								</tr>
+								<tr name="redish2">
+									<td>감정부조화 및 손상</td>
+									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
+									<td>63.89~100</td>
+								</tr>
+								<tr name="redish3">
+									<td>조직 감시 및 모니터링</td>
+									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
+									<td>50.00~100</td>
+								</tr>
+								<tr name="redish4">
+									<td>조직 지지 및 보호체계</td>
+									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
+									<td>45.24~100</td>
+								</tr>
+							</tbody>
+						</thead>
+					</table>
+					</div>
+				</div>
+				</div>		
+			
+		</div>		
+	</body>
+</html>
