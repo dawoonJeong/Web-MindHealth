@@ -279,7 +279,6 @@ function calcScoreJob01(){
 		console.log(res+","+scores[i]);
 
 		document.getElementsByName(res)[0].value = scores[i];
-		document.getElementsByName(res)[1].value = scores[i];
 		res="result";
 	}
 
