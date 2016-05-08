@@ -31,7 +31,7 @@
 				</dl>
 			</div> <!-- end description -->
 
-			<div >
+		<div >
 				<!-- 테이블 -->
 				<table class="table" >
 					<thead>
@@ -49,9 +49,10 @@
 							<tr>
 								<th> 00 </th>
 								<td> 성별 </td>
-								<td> 남 <input type="radio" name="gender" value="1" /></td>
-								<td> 여 <input type="radio" name="gender" value="0" /></td>
+								<td colspan="2"> 남 <input type="radio" name="gender" value="0"/></td>
+								<td colspan="2"> 여 <input type="radio" name="gender" value="1"/></td>
 							</tr>
+							 	
 														<tr>
 								<th> 01 </th>
 								<td> 고객에게 부정적인 감정을 표현하지 않으려고 의식적으로 노력한다. </td>
@@ -250,100 +251,15 @@
 					</tbody>
 				</table>
 			</div> <!-- end table-->
+
 			<div align="right">
 				<!-- 버튼 및 총점 // js 태그로 달아둠 -->
 				<a href="javascript:;" onClick="survey_count.reset();" class="btn btn-default btn-sm active" role="button">다시하기</a>
 				<a href="javascript:calcScoreJob02();" class="btn btn-primary btn-sm active" role="button">총점확인</a>
 			</div><!-- end btn and score -->
 			<p></p>
-			<div class="panel panel-primary"> <!-- 점수 범위 설명 부분 -->
-				<div class="panel-heading"> 점수결과 </div>
-				<div class="panel-body">	
-					<ul class="nav nav-tabs">
-						<li class="active"><a data-toggle="tab" href="#man">남자</a></li>
-						<li><a data-toggle="tab" href="#woman">여자</a></li>
-					</ul>		
-
-					<div class="tab-content">
-					<div id="man" class="tab-pane fade in active">			
-					<table class="table">
-						<thead style="background-color:#ffffff; color:black;">
-							<tr>
-								<th color="white"> 영 역 </th>
-								<th color="white"> 결과값 </th>
-								<th color="white"> 위험범위(남) </th>
-							</tr>
-							<tbody>
-								<tr name="redish0">
-									<td>감정표출의 노력 및 다양성</td>
-									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
-									<td>83.33~100</td>
-								</tr>
-								<tr name="redish1">
-									<td>고객응대 과부하 및 갈등</td>
-									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
-									<td>83.33~100</td>
-								</tr>
-								<tr name="redish2">
-									<td>감정부조화 및 손상</td>
-									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
-									<td>69.44~100</td>
-								</tr>
-								<tr name="redish3">
-									<td>조직 감시 및 모니터링</td>
-									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
-									<td>61.11~100</td>
-								</tr>
-								<tr name="redish4">
-									<td>조직 지지 및 보호체계</td>
-									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
-									<td>50.00~100</td>
-								</tr>
-							</tbody>
-						</thead>
-					</table>
-					</div>
-					<div id="woman" class="tab-pane fade">
-					<table class="table">
-						<thead style="background-color:#ffffff; color:black;">
-							<tr>
-								<th color="white"> 영 역 </th>
-								<th color="white"> 결과값 </th>
-								<th color="white"> 위험범위(여) </th>
-							</tr>
-							<tbody>
-								<tr name="redish0">
-									<td>감정표출의 노력 및 다양성</td>
-									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
-									<td>76.67~100</td>
-								</tr>
-								<tr name="redish1">
-									<td>고객응대 과부하 및 갈등</td>
-									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
-									<td>72.22~100</td>
-								</tr>
-								<tr name="redish2">
-									<td>감정부조화 및 손상</td>
-									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
-									<td>63.89~100</td>
-								</tr>
-								<tr name="redish3">
-									<td>조직 감시 및 모니터링</td>
-									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
-									<td>50.00~100</td>
-								</tr>
-								<tr name="redish4">
-									<td>조직 지지 및 보호체계</td>
-									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
-									<td>45.24~100</td>
-								</tr>
-							</tbody>
-						</thead>
-					</table>
-					</div>
-				</div>
+			<div id="tblResult">		
+			</div>
 				</div>		
-			
-		</div>		
 	</body>
 </html>

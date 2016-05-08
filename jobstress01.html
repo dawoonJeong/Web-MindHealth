@@ -49,8 +49,8 @@
 							<tr>
 								<th> 00 </th>
 								<td> 성별 </td>
-								<td> 남 <input type="radio" name="gender" value="1" /></td>
-								<td> 여 <input type="radio" name="gender" value="0" /></td>
+								<td colspan="2"> 남 <input type="radio" name="gender" value="0"/></td>
+								<td colspan="2"> 여 <input type="radio" name="gender" value="1"/></td>
 							</tr>
 							<tr>
 								<th> 01 </th>
@@ -406,64 +406,9 @@
 				<a href="javascript:;" onClick="survey_count.reset();" class="btn btn-default btn-sm active" role="button">다시하기</a>
 				<a href="javascript:calcScoreJob01();" class="btn btn-primary btn-sm active" role="button">총점확인</a>
 			</div><!-- end btn and score -->
-			<p></p>
-			<div class="panel panel-primary"> <!-- 점수 범위 설명 부분 -->
-				<div class="panel-heading"> 점수결과 </div>
-				<div class="panel-body">	
-											
-						<table class="table">
-							<thead style="background-color:#ffffff; color:black;">
-							<tr>
-								<th color="white"> 영 역 </th>
-								<th color="white"> 결과값 </th>
-								<th color="white"> 한국노동자 중간값 </th>
-							</tr>
-							<tbody>
-								<tr>
-									<td>물리적 환경</td>
-									<td><input type="text" border="none" name="result0" size="5" readonly> 점</td>
-									<td>44.5</td>
-								</tr>
-								<tr>
-									<td>직무요구</td>
-									<td><input type="text" border="none" name="result1" size="5" readonly> 점</td>
-									<td>50.1</td>
-								</tr>
-								<tr>
-									<td>직무자율</td>
-									<td><input type="text" border="none" name="result2" size="5" readonly> 점</td>
-									<td>53.4</td>
-								</tr>
-								<tr>
-									<td>관계갈등</td>
-									<td><input type="text" border="none" name="result3" size="5" readonly> 점</td>
-									<td>33.4</td>
-								</tr>
-								<tr>
-									<td>직무불안정</td>
-									<td><input type="text" border="none" name="result4" size="5" readonly> 점</td>
-									<td>50.1</td>
-								</tr>
-								<tr>
-									<td>조직체계</td>
-									<td><input type="text" border="none" name="result5" size="5" readonly> 점</td>
-									<td>52.4</td>
-								</tr>
-								<tr>
-									<td>보상부적절</td>
-									<td><input type="text" border="none" name="result6" size="5" readonly> 점</td>
-									<td>66.7</td>
-								</tr>
-								<tr>
-									<td>직장문화</td>
-									<td><input type="text" border="none" name="result7" size="5" readonly> 점</td>
-									<td>41.7</td>
-								</tr>
-							</tbody>
-						</thead>
-					</table>
-				</div>	<!-- end pannel body -->	
-			</div><!-- end pannel -->
+			<p><br><br><br></p>
+			<div id="tblResult">		
+			</div>
 		</div><!-- end container -->		
 		
 	</body>

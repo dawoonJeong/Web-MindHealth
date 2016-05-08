@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+   	 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+    	<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="../js/calculation.js"></script>
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+		<link href="../css/commonEdit.css" rel="stylesheet">
+		<!--[if IE]>
+			<link href="./css/commonEditIE.css" rel="stylesheet" type="text/css">
+		<![endif]-->
+		<!--[if !IE]>
+			<link href="./css/commonEdit.css" rel="stylesheet" type="text/css">
+		<!<![endif]-->
+    	
+    	<style type="text/css">
+			td{
+			    padding:12px !important;
+			}
+			.Margin20-JD{
+				margin:20px !important;
+			}
+    	</style>
+    
+	</head>
+	<body>
+		<div class="container">			
+			<div class="panel panel-primary">
+				<!-- 설명 -->
+				<dl class="dl-horizontal Margin20-JD">
+					<h2> Depression </h2>
+					우울증 <br/>
+					아래의 문장들은 여러분이 일상 생활에서 경험할 수 있는 내용들로 구성되어 있습니다.
+					각 문항은 네 개의 문장으로 구성되어 있으니 자세히 읽어보시고, 그 중 오늘을 포함한 지난 일주일 간의 자신을 가장 잘 나타낸다고 생각되는 문장 하나를 선택하세요. 너무 오래 생각하지 마시고 솔직하게 응답해 주시면 감사하겠습니다. 					
+				</dl>
+			</div> <!-- end description -->
+
+			<div >
+				<!-- 테이블 -->
+				<table class="table">
+					<thead>
+						<tr >
+							<th color="white"> 번호 </th>
+							<th class="txt-align-center" color="white"> 평가내용 </th>
+						</tr>
+					</thead>
+					<tbody>
+						<form name="survey_count">
+														<tr>
+								<th rowspan="4"> 1 </th>
+								<td><input type="radio" name="d1" value="0" /> 나는 슬프지 않다.</td></tr>
+								<tr><td><input type="radio" name="d1" value="1" /> 나는 슬프다.</td></tr>
+								<tr><td><input type="radio" name="d1" value="2" /> 나는 항상 슬프고 기운을 낼 수 없다.</td></tr>
+								<tr><td><input type="radio" name="d1" value="3" /> 나는 너무나 슬프고 불행해서 도저히 견딜 수 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 2 </th>
+								<td><input type="radio" name="d2" value="0" /> 나는 앞날에 대해서 별로 낙심하지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d2" value="1" /> 나는 앞날에 대해서 용기가 나지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d2" value="2" /> 나는 앞날에 대해 기대할 것이 아무 것도 없다고 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d2" value="3" /> 나의 앞날은 아주 절망적이고 나아질 가망이 없다고 느낀다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 3 </th>
+								<td> <input type="radio" name="d3" value="0" /> 나는 실패자라고 느끼지 않는다. </td></tr>
+								<tr><td><input type="radio" name="d3" value="1" /> 나는 보통사람들보다 더 많이 실패한 것 같다.</td></tr>
+								<tr><td><input type="radio" name="d3" value="2" /> 내가 살아온 과거를 뒤돌아보면, 실패투성이인 것 같다.</td></tr>
+								<tr><td><input type="radio" name="d3" value="3" /> 나는 인간으로 완전한 실패자라고 느낀다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 4 </th>
+								<td> <input type="radio" name="d4" value="0" /> 나는 전과 다름없이 일상생활속에서 만족을 느끼고 있다.</td></tr>
+								<tr><td><input type="radio" name="d4" value="1" /> 나는 전과 같이 일상생활이 즐겁지 않다.</td></tr>
+								<tr><td><input type="radio" name="d4" value="2" /> 나는 더 이상 어떤 것에서도 만족을 얻지 못한다.</td></tr>
+								<tr><td><input type="radio" name="d4" value="3" /> 나는 매사가 다 불만스럽고 지겹다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 5 </th>
+								<td> <input type="radio" name="d5" value="0" /> 나는 특별히 죄책감을 느끼지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d5" value="1" /> 나는 종종 죄책감을 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d5" value="2" /> 나는 자주 죄책감을 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d5" value="3" /> 나는 항상 죄책감을 느낀다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 6 </th>
+								<td> <input type="radio" name="d6" value="0" /> 나는 내가 벌을 받고 있다고 느끼지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d6" value="1" /> 나는 내가 벌을 받을지도 모른다고 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d6" value="2" /> 나는 내가 앞으로 벌을 받을 거라고 생각한다.</td></tr>
+								<tr><td><input type="radio" name="d6" value="3" /> 나는 지금 벌을 받고 있다고 느낀다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 7 </th>
+								<td> <input type="radio" name="d7" value="0" /> 나는 내자신에 대해 실망하지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d7" value="1" /> 나는 내자신에 대해 실망하고 있다.</td></tr>
+								<tr><td><input type="radio" name="d7" value="2" /> 나는 내자신이 싫다.</td></tr>
+								<tr><td><input type="radio" name="d7" value="3" /> 나는 내자신을 증오하고 있다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 8 </th>
+								<td> <input type="radio" name="d8" value="0" /> 나는 내가 다른 사람보다 못하다고 느끼지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d8" value="1" /> 나는 나의 약점이나 실수에 대하여 내자신을 비판하는 편이다.</td></tr>
+								<tr><td><input type="radio" name="d8" value="2" /> 나는 나의 잘못에 대해 항상 내자신을 질책한다.</td></tr>
+								<tr><td><input type="radio" name="d8" value="3" /> 나는 주변에서 일어나는 잘못된 모든 일에 대하여 내자신을 질책한다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 9 </th>
+								<td> <input type="radio" name="d9" value="0" /> 나는 자살할 생각같은 것은 하지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d9" value="1" /> 나는 행동에 옮기지는 않지만 자살할 생각을 갖고 있다.</td></tr>
+								<tr><td><input type="radio" name="d9" value="2" /> 나는 자살하고 싶다.</td></tr>
+								<tr><td><input type="radio" name="d9" value="3" /> 나는 기회만 있으면 자살하겠다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 10 </th>
+								<td> <input type="radio" name="d10" value="0" /> 나는 전보다 더 자주 울지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d10" value="1" /> 나는 요즘 전보다 자주 운다.</td></tr>
+								<tr><td><input type="radio" name="d10" value="2" /> 나는 요즘 항상 운다.</td></tr>
+								<tr><td><input type="radio" name="d10" value="3" /> 나는 너무 울어 이제는 울고 싶어도 눈물이 안 나온다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 11 </th>
+								<td> <input type="radio" name="d11" value="0" /> 나는 전보다 더 자주 화를 내지는 않는다.</td></tr>
+								<tr><td><input type="radio" name="d11" value="1" /> 나는 전보다 더 신경질적이고 짜증스럽다.</td></tr>
+								<tr><td><input type="radio" name="d11" value="2" /> 나는 요즘 항상 짜증스럽다.</td></tr>
+								<tr><td><input type="radio" name="d11" value="3" /> 전에는 짜증스럽던 일인데도 이젠 짜증조차 나지 않는다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 12 </th>
+								<td> <input type="radio" name="d12" value="0" /> 나는 전처럼 다른사람에 대한 관심을 가지고 있다.</td></tr>
+								<tr><td><input type="radio" name="d12" value="1" /> 나는 전보다 다른사람에 대한 관심이 줄었다.</td></tr>
+								<tr><td><input type="radio" name="d12" value="2" /> 나는 다른사람에 대해 거의 관심이 없어졌다.</td></tr>
+								<tr><td><input type="radio" name="d12" value="3" /> 나는 다른사람에 대해 전혀 관심이 없어졌다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 13 </th>
+								<td> <input type="radio" name="d13" value="0" /> 나는 전처럼 어떤일을 결정하는 데에 어려움이 없다.</td></tr>
+								<tr><td><input type="radio" name="d13" value="1" /> 나는 전에 비해 결정을 잘 내리지 못하고 뒤로 미룬다.</td></tr>
+								<tr><td><input type="radio" name="d13" value="2" /> 나는 전보다 어떤일을 결정하기가 상당히 어렵다.</td></tr>
+								<tr><td><input type="radio" name="d13" value="3" /> 나는 더이상 어떤결정을 내릴 수가 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 14 </th>
+								<td> <input type="radio" name="d14" value="0" /> 나는 전보다 내 모습(외모)이 추해졌다고 느끼지 않는다.</td></tr>
+								<tr><td><input type="radio" name="d14" value="1" /> 나는 내가 나이들고 매력없게 보일까봐 걱정한다.</td></tr>
+								<tr><td><input type="radio" name="d14" value="2" /> 이젠 남에게 매력을 주지 못할 만큼 내모습이 변했다.</td></tr>
+								<tr><td><input type="radio" name="d14" value="3" /> 나는 내가 못 생겼다고 생각한다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 15 </th>
+								<td> <input type="radio" name="d15" value="0" /> 나는 전과 다름없이 일을 잘 할 수 있다.</td></tr>
+								<tr><td><input type="radio" name="d15" value="1" /> 어떤 일을 시작하려면 전보다 더 힘이 든다.</td></tr>
+								<tr><td><input type="radio" name="d15" value="2" /> 어떤 일을 하기가 무척 힘들다</td></tr>
+								<tr><td><input type="radio" name="d15" value="3" /> 나는 아무런 일도 할 수가 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 16 </th>
+								<td> <input type="radio" name="d16" value="0" /> 나는 전처럼 잘 잔다.</td></tr>
+								<tr><td><input type="radio" name="d16" value="1" /> 나는 전처럼 잘 자지 못한다.</td></tr>
+								<tr><td><input type="radio" name="d16" value="2" /> 나는 전보다 한두시간 일찍 잠을 깨며 다시 잠들기가 어렵다.</td></tr>
+								<tr><td><input type="radio" name="d16" value="3" /> 나는 전보다 몇 시간 일찍 잠을 깨며 다시 잠들 수가 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 17 </th>
+								<td> <input type="radio" name="d17" value="0" /> 나는 전보다 더 피곤을 느끼지는 않는다.</td></tr>
+								<tr><td><input type="radio" name="d17" value="1" /> 나는 전보다 더 쉽게 피곤을 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d17" value="2" /> 는 거의 모든일을 할 때마다 피곤을 느낀다.</td></tr>
+								<tr><td><input type="radio" name="d17" value="3" /> 나는 너무 피곤해서 아무 일도 할 수 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 18 </th>
+								<td> <input type="radio" name="d18" value="0" /> 내 식욕은 전보다 나빠지지 않았다.</td></tr>
+								<tr><td><input type="radio" name="d18" value="1" /> 내 식욕은 전처럼 좋지 않다.</td></tr>
+								<tr><td><input type="radio" name="d18" value="2" /> 내 식욕은 요즘 매우 좋지 않다.</td></tr>
+								<tr><td><input type="radio" name="d18" value="3" /> 요즘은 전혀 식욕이 없다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 19 </th>
+								<td> <input type="radio" name="d19" value="0" /> 나는 요즘 몸무게가 줄지 않았다.</td></tr>
+								<tr><td><input type="radio" name="d19" value="1" /> 나는 전보다 몸무게가 조금 줄었다.</td></tr>
+								<tr><td><input type="radio" name="d19" value="2" /> 나는 전보다 몸무게가 많이 줄었다.</td></tr>
+								<tr><td><input type="radio" name="d19" value="3" /> 나는 몸무게가 너무 많이 줄어 건강에 위협을 느낄 정도다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 20 </th>
+								<td> <input type="radio" name="d20" value="0" /> 나는 전보다 건강에 대해 더 신경쓰지는 않는다.</td></tr>
+								<tr><td><input type="radio" name="d20" value="1" /> 나는 두통, 소화불량, 변비 등으로 건강에 신경이 쓰인다.</td></tr>
+								<tr><td><input type="radio" name="d20" value="2" /> 나는 건강에 신경이 많이 쓰여 다른 일을 하는데 어려움이 있다.</td></tr>
+								<tr><td><input type="radio" name="d20" value="3" /> 나는 다른 일을 할 수 없을 정도로 건강에 대해 걱정이 심하다.</td></tr>
+							</tr>
+														<tr>
+								<th rowspan="4"> 21 </th>
+								<td> <input type="radio" name="d21" value="0" /> 나는 요즘도 성(性)에 대한 관심에 변화가 없다고 생각한다.</td></tr>
+								<tr><td><input type="radio" name="d21" value="1" /> 나는 전보다 성(性)에 대한 관심이 적어졌다.</td></tr>
+								<tr><td><input type="radio" name="d21" value="2" /> 나는 요즘 성(性)에 대한 관심이 현저하게 줄었다.</td></tr>
+								<tr><td><input type="radio" name="d21" value="3" /> 나는 성(性)에 대한 흥미를 완전히 잃어 버렸다.</td></tr>
+							</tr>
+													</form>
+					</tbody>
+				</table>
+			</div> <!-- end table-->
+			<div align="right">
+				<!-- 버튼 및 총점 // js 태그로 달아둠 -->
+				<a href="javascript:;" onClick="tbl_form.reset();" class="btn btn-default btn-sm active" role="button">다시하기</a>
+				<a href="javascript:calcScore(21,4);" class="btn btn-primary btn-sm active" role="button">총점확인</a>
+
+				<input type="text" border="none" name="result" size="5"  readonly > 점</p>
+
+			</div><!-- end btn and score -->
+			<div class="panel panel-primary"><!-- 점수 범위 설명 부분 -->
+				<div class="panel-heading"> 점수결과 </div>
+				<div class="panel-body">
+					<span> 0점~9점  </span>: 우울하지 않은 상태</br>
+					<span> 10점~15점 </span>: 가벼운 우울 상태</br>
+					<span> 16점~23점 </span>: 중한 우울 상태</br>
+					<span> 24점~63점  </span>: 심한 우울 상태</br>	
+			</div>
+		</div>		
+	</body>
+</html>
